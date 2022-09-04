@@ -55,7 +55,8 @@ const NavItem = tw.li`
 
 export function NavBar() {
 
-  const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile })
+  const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
+
   const navItems = <NavItems>
     <NavItem>
       <Link to='Home'>Home</Link>
@@ -68,13 +69,15 @@ export function NavBar() {
     </NavItem>
   </NavItems>
 
-  return <Container>
-    <Logo />
-    {isMobile && (
-      <Menu right styles={styles}>
-        {navItems}
-      </Menu>
-    )}
-    {!isMobile && navItems}
-  </Container>
+  return (
+    <Container>
+      <Logo />
+      {isMobile && (
+        <Menu right styles={styles}>
+          {navItems}
+        </Menu>
+      )}
+      {!isMobile && navItems}
+    </Container>
+  )
 }
