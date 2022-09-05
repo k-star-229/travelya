@@ -8,18 +8,20 @@ import { slide as Menu } from 'react-burger-menu';
 import styles from './menuStyles';
 
 const Container = styled.div`
-  color: red;
+  width: 90%;
   ${tw`
     flex
+    m-2
     h-20
     pl-6
     pr-6
-    pt-4
     border-b-2
     border-gray-200
     border-opacity-50
     items-center
     self-center
+    bg-opacity-50
+    bg-gray-400
   `};
 `;
 
@@ -27,6 +29,7 @@ const NavItems = tw.ul`
   list-none
   w-full
   h-auto
+  lg:w-auto
   lg:h-full
   flex
   lg:ml-20
