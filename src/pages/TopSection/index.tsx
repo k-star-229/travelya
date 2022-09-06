@@ -62,7 +62,7 @@ const FloatingText = styled.h1`
 `;
 
 const OutlinedTextSvg = styled.svg`
-  font: bold 100px Century 'Archivo Narrow', Arial;
+  font: bold 100px Century "Archivo Narrow", Arial;
   ${tw`
     width[550px]
     height[100px]
@@ -119,8 +119,8 @@ export function TopSection() {
         <NavBar />
         <InfoSection>
           <FloatingText>WORLD</FloatingText>
-          <FloatingText style={{display: 'inline-flex'}}>OF
-            <OutlinedTextSvg viewBox='0 0 530 100'>
+          <FloatingText style={{display: "inline-flex"}}>OF
+            <OutlinedTextSvg viewBox="0 0 530 100">
               <text>PARADISE,</text>
             </OutlinedTextSvg>
           </FloatingText>
